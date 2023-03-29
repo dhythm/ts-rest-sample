@@ -24,9 +24,14 @@ const router = s.router(contract, {
     };
   },
   createPost: async ({ body }) => {
+    const response = {
+      id: "1",
+      title: body.title,
+      body: body.body,
+    };
     return {
       status: 201,
-      body,
+      body: response,
     };
   },
 });

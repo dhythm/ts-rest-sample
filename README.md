@@ -60,3 +60,10 @@ npm install @ts-rest/next
 ```sh
 npm install @ts-rest/react-query
 ```
+
+### Setting up the configuration
+
+```sh
+npm install --save-dev concurrently
+npm install --save-dev ts-node
+```
