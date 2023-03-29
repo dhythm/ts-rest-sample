@@ -61,6 +61,19 @@ npm install @ts-rest/next
 npm install @ts-rest/react-query
 ```
 
+```sh
+npm install react react-dom
+npm install --save-dev @types/react @types/react-dom
+npm install --save-dev vite @vitejs/plugin-react @types/node
+touch vite.config.ts
+```
+
+```sh
+mkdir public
+touch public/index.html
+touch src/client/index.tsx
+```
+
 ### Setting up the configuration
 
 ```sh
