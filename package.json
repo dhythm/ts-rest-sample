@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently -n server,client -c auto \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite",
     "dev:server": "ts-node-esm --project tsconfig.server.json src/server/main.ts",
     "build:client": "vite build",
@@ -14,6 +15,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@tanstack/react-query": "^4.28.0",
     "@ts-rest/core": "^3.18.1",
     "@ts-rest/express": "^3.18.1",
     "@ts-rest/react-query": "^3.18.1",

@@ -15,8 +15,8 @@ const router = s.router(contract, {
   getPost: async ({ params: { id } }) => {
     const post = {
       id,
-      title: "",
-      body: "",
+      title: "title",
+      body: "body",
     };
     return {
       status: 200,

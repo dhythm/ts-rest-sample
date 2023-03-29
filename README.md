@@ -58,6 +58,7 @@ npm install @ts-rest/next
 ### Client implementation
 
 ```sh
+npm install @tanstack/react-query
 npm install @ts-rest/react-query
 ```
 

@@ -1,13 +1,14 @@
 import { initQueryClient } from "@ts-rest/react-query";
 import { contract } from "./contract";
+import React from "react";
 
 const client = initQueryClient(contract, {
-  baseUrl: "http://localhost:3000",
+  baseUrl: "http://localhost:3333",
   baseHeaders: {},
 });
 
 export const Index = () => {
-  const { data, isLoading, error } = client.getPost.useQuery({
+  const { data, isLoading, error } = client.getPost.useQuery(["post"], {
     params: { id: "1" },
   });
 
@@ -19,5 +20,5 @@ export const Index = () => {
     return <div>Error</div>;
   }
 
-  return <div>{data.body.title}</div>;
+  return <div>{JSON.stringify(data)}</div>;
 };
